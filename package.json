@@ -1,0 +1,17 @@
+{
+  "name": "veepar-api",
+  "version": "0.3.0",
+  "description": "Reverse Engineered Veepar API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "path": "^0.12.7"
+  }
+}
