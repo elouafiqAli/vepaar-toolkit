@@ -1,0 +1,17 @@
+{
+  "API":{
+    "baseurl" : "https://api.vepaar.com/graphql",
+    "auth": "https://api.vepaar.com/graphql/open"
+  },
+  "account":{
+    "email":"environments@beyond-believers.com",
+    "password" : "Am not a Bot",
+    "storeId" : 93485,
+    "campaignId": 162191
+  },
+  "params":{
+    "pdf_suffix": "?size=a4",
+    "threshold": 200,
+    "perPage" : 100
+  }
+}

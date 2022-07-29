@@ -85,6 +85,7 @@ export default class ExportOrdersFetcher extends APISession {
             let {data} = await axios(ExportOrdersFetcher.export_probe_http_request());
             return data
         }catch(e){
+            console.log(e)
         }
     }
     static export_probe_http_request(id){
@@ -95,9 +96,12 @@ export default class ExportOrdersFetcher extends APISession {
             headers: APISession.auth_headers(),
         }
     }
-    static export_probe_query(start_timestamp = 1658444400, end_timestamp = 1658530799) {
-        const t_start = start_timestamp || 1658444400
-        const t_end = end_timestamp || 1658530799
+    static export_probe_query(start_timestamp , end_timestamp ) {
+        const date_ = new Date()
+        const _format = t => Math.floor(t / 1000)
+        const t_end = _format(date_ )
+        const t_start = _format(date_.setDate(date_.getDate() - 1));
+
         let variables = {
             "campaignId": APISession.api_config.account.campaignId,
             "storeId":APISession.api_config.account.storeId,

@@ -1,6 +1,6 @@
 {
-  "name": "@b-b/veepar-api",
-  "version": "0.3.0",
+  "name": "@b-b/vepaar-api",
+  "version": "0.3.2",
   "description": "Reverse Engineered Veepar API",
   "type": "module",
   "main": "index.mjs",
