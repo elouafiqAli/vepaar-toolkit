@@ -1,5 +1,5 @@
 {
-  "name": "@b-b/vepaar-api",
+  "name": "vepaar-toolkit",
   "version": "0.3.2",
   "description": "Reverse Engineered Veepar API",
   "type": "module",
