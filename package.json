@@ -6,8 +6,6 @@
   "main": "index.mjs",
   "scripts": {
     "dist": "rm -rf dist && cp -r src dist && cp package.json dist/package.json && cd dist && npm pack && npm publish",
-    "prepare": "npm run co:login",
-    "co:login": "aws codeartifact login --tool npm --repository data-providers  --domain beyond-believers-cloud",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
